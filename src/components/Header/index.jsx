@@ -17,10 +17,10 @@ const Header = ({setMenuIsVisible}) => {
               <Link to="/users" className="nav-link">lista</Link>
             </li>
             <li>
-              <Link to="/" className="nav-link">Sobre mim</Link>
+              <Link to="/" className="nav-link">sobre mim</Link>
             </li>
             <li className="list-link">
-              <Link to="/registration" className="nav-link">Cadastro</Link>
+              <Link to="/registration" className="nav-link">cadastro</Link>
             </li>
           </ul>
         </nav>
