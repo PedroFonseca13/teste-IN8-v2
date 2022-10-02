@@ -14,10 +14,47 @@ export const Navigation = styled.section`
   > section>nav {
     display: none;
   }
+
+  @media screen and (min-width:1440px){
+    > section:first-child {
+      display: none;
+    }
+    > section {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: space-between;
+    }
+    > section>nav {
+      display: flex;
+    }
+    > section>nav>ul {
+      display: flex;
+      gap: 40px;
+      color: white;
+      flex-direction: row-reverse;
+    }
+    .list-link {
+      list-style: none;
+    }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+    .nav-link:hover{
+      text-decoration: underline;
+    }
+  }
 `
 
 export const Menu = styled.img`
   width: 30px;
+
+  @media screen and (min-width:1440px){
+    display: none;
+  }
 
 `
 

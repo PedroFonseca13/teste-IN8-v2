@@ -12,12 +12,18 @@ const Header = ({setMenuIsVisible}) => {
       </section>
       <section>
         <nav>
-
-          <Link to="/users">lista</Link>
-          <Link to="/">Sobre mim</Link>
-          <Link to="/registration">Cadastro</Link>
+          <ul>
+            <li>
+              <Link to="/users" className="nav-link">lista</Link>
+            </li>
+            <li>
+              <Link to="/" className="nav-link">Sobre mim</Link>
+            </li>
+            <li className="list-link">
+              <Link to="/registration" className="nav-link">Cadastro</Link>
+            </li>
+          </ul>
         </nav>
-
         <div>
           <Logo src={LogoIN8} />
         </div>
