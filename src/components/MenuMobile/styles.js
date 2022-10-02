@@ -21,7 +21,7 @@ export const Container = styled.section`
 
   > img {
     position: absolute;
-    top: 15px;
+    top: 40px;
     left: 25px;
     transform: rotate(45deg);
     transition: .7s;
