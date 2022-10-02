@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import MenuHamburger from '../../assets/icons/hamburguer.svg'
 import LogoIN8 from '../../assets/icons/logo-in8-dev.svg'
 import { Menu, Logo, Navigation } from './style'
@@ -11,9 +12,10 @@ const Header = ({setMenuIsVisible}) => {
       </section>
       <section>
         <nav>
-          <a href="#">lista</a>
-          <a href="#">Sobre mim</a>
-          <a href="#">Cadastro</a>
+
+          <Link to="/users">lista</Link>
+          <Link to="/">Sobre mim</Link>
+          <Link to="/registration">Cadastro</Link>
         </nav>
 
         <div>
