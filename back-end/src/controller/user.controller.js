@@ -17,7 +17,7 @@ const getAllUsers = async (req, res) => {
 
     res.status(200).json(result);
   } catch (error) {
-    res.status(error.status || 500).json({ message: 'coe' });
+    res.status(error.status || 500).json({ message: error.message });
   }
 }
 
