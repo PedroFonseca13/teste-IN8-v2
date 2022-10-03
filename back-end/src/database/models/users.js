@@ -18,7 +18,7 @@ const createUserModel = (sequelize, DataTypes) => {
     bday: DataTypes.DATE,
     phone: DataTypes.STRING
   }, {
-    underscored: true,
+    timestamps: false,
     tableName: 'users'
   })
 

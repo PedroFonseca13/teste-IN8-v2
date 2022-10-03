@@ -1,4 +1,4 @@
-const { User } = require('../database/models')
+const { User } = require('../database/models');
 
 const create = async (name, email, phone) => {
   const newUser = await User.create({ name, email, phone });
@@ -6,11 +6,11 @@ const create = async (name, email, phone) => {
   return newUser;
 }
 
-// const getAllProducts = async () => {
-//   const result = await Product.findAll();
-
-//   return result
-// }
+const getAllUsers = async () => {
+  const result = await User.findAll();
+  console.log(result);
+  return result
+}
 
 // const findProductByID = async (id) => {
 //   const product = await Product.findOne({
@@ -28,7 +28,7 @@ const create = async (name, email, phone) => {
 
 module.exports = {
   create,
-  // getAllProducts,
+  getAllUsers,
   // findProductByID,
   // deleteProduct
 }

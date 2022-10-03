@@ -11,15 +11,15 @@ const createUser = async (req, res) => {
   }
 };
 
-// const getAllProducts = async (req, res) => {
-//   try {
-//     const result = await ProductService.getAllProducts()
+const getAllUsers = async (req, res) => {
+  try {
+    const result = await UserServices.getAllUsers()
 
-//     res.status(200).json(result);
-//   } catch (error) {
-//     res.status(error.status || 500).json({ message: error.message });
-//   }
-// }
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(error.status || 500).json({ message: 'coe' });
+  }
+}
 
 // const findProductByID = async (req, res) => {
 //   try {
@@ -46,7 +46,7 @@ const createUser = async (req, res) => {
 
 module.exports = {
   createUser,
-  // getAllProducts,
+  getAllUsers,
   // findProductByID,
   // deleteProduct
 }

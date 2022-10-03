@@ -8,16 +8,16 @@ module.exports = {
         email: 'pedro@fonseca.com',
         bday: Sequelize.literal('CURRENT_TIMESTAMP'),
         phone: '31971680891',
-        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
+        // created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        // updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
       },
       {
         name: 'Pedro Fonseca',
         email: 'pedro@fonseca.com',
         bday: Sequelize.literal('CURRENT_TIMESTAMP'),
         phone: '31971680891',
-        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
+        // created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        // updated_at: Sequelize.literal('CURRENT_TIMESTAMP')
       },
     ]
   ),
