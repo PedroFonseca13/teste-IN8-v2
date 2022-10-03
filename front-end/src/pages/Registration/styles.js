@@ -15,7 +15,7 @@ export const Title = styled.h3`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 1.5rem;
+  /* margin: 0 auto; */
 `;
 
 export const Form = styled.form`
@@ -25,6 +25,14 @@ export const Form = styled.form`
   /* width: 50%; */
   align-items: flex-start;
   padding: 0 10px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 75px;
+  }
 `;
 
 export const Label = styled.label`
@@ -50,13 +58,13 @@ export const Input = styled.input`
   }
 
   &:focus {
-    /* border: 0 none; */
     outline: 0;
   }
 `;
 
 export const ContainerForm = styled.div`
   text-align: center;
+  margin: 0 auto;
   margin-top: 2rem;
 `;
 
