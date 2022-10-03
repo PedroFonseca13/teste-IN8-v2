@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Navigation = styled.section`
   margin: 0 auto;
@@ -7,15 +7,15 @@ export const Navigation = styled.section`
   align-items: center;
   padding: 15px 25px;
 
-  @media screen and (min-width:1024px){
-   padding: 40px 25px;
+  @media screen and (min-width: 1024px) {
+    padding: 40px 25px;
   }
 
-  > section>nav {
+  > section > nav {
     display: none;
   }
 
-  @media screen and (min-width:1440px){
+  @media screen and (min-width: 1440px) {
     > section:first-child {
       display: none;
     }
@@ -26,10 +26,10 @@ export const Navigation = styled.section`
       width: 100%;
       justify-content: space-between;
     }
-    > section>nav {
+    > section > nav {
       display: flex;
     }
-    > section>nav>ul {
+    > section > nav > ul {
       display: flex;
       gap: 40px;
       color: white;
@@ -43,25 +43,24 @@ export const Navigation = styled.section`
       text-decoration: none;
       font-size: 1.4rem;
     }
-    .nav-link:hover{
+    .nav-link:hover {
       text-decoration: underline;
     }
   }
-`
+`;
 
 export const Menu = styled.img`
   width: 30px;
 
-  @media screen and (min-width:1440px){
+  @media screen and (min-width: 1440px) {
     display: none;
   }
-
-`
+`;
 
 export const Logo = styled.img`
   width: 100px;
 
-  @media screen and (min-width:1024px){
+  @media screen and (min-width: 1024px) {
     width: 150px;
   }
-`
+`;

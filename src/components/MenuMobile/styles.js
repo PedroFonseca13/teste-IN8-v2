@@ -17,14 +17,14 @@ export const Container = styled.section`
   pointer-events: none;
   transform: translateY(-50px);
 
-  transition: .5s;
+  transition: 0.5s;
 
   > img {
     position: absolute;
     top: 40px;
     left: 25px;
     transform: rotate(45deg);
-    transition: .7s;
+    transition: 0.7s;
   }
 
   > nav {
@@ -32,22 +32,24 @@ export const Container = styled.section`
     align-items: flex-start;
     flex-direction: column;
     gap: 2rem;
-    transform: scale(.7);
-    transition: .7s;
+    transform: scale(0.7);
+    transition: 0.7s;
   }
 
-  ${({ isVisible }) => isVisible && css`
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0px);
+  ${({ isVisible }) =>
+    isVisible &&
+    css`
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0px);
 
-    > img {
-      transform: rotate(0deg);
-    }
-    > nav {
-      transform: scale(1);
-    }
-  `}
+      > img {
+        transform: rotate(0deg);
+      }
+      > nav {
+        transform: scale(1);
+      }
+    `}
 `;
 
 export const MenuList = styled.nav`
@@ -75,11 +77,11 @@ export const MenuList = styled.nav`
     transition: transform 0.3s;
   }
 
-  > a:hover::after{
+  > a:hover::after {
     transform: scaleX(1);
   }
-`
+`;
 
 export const Menu = styled.img`
   width: 30px;
-`
+`;

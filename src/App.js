@@ -11,13 +11,13 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={ Home } />
-          <Route path="/registration" component={ Registration } />
-          <Route path="/users" component={ Users } />
+          <Route exact path="/" component={Home} />
+          <Route path="/registration" component={Registration} />
+          <Route path="/users" component={Users} />
         </Switch>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
